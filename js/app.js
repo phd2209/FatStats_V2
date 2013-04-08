@@ -299,10 +299,8 @@ $(document).on('click', '.logout', function () {
     FB.logout();
     return false;
 });
-
 $(document).on('login', function () {
-    FB.login(function(response) {
-        console.log("Logged In");
+    FB.login(function (response) {
     }, { scope: 'email,user_likes,user_photos,friends_likes' });
     return false;
 });
