@@ -303,7 +303,7 @@ $(document).on('click', '.logout', function () {
 $(document).on('login', function () {
     FB.login(function(response) {
         console.log("Logged In");
-    }, {scope: 'publish_actions,user_status,friends_status,read_stream'});
+    }, { scope: 'email,user_likes,user_photos,friends_likes' });
     return false;
 });
 
