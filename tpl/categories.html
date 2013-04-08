@@ -1,0 +1,24 @@
+<header class="bar-title">
+    <!--<a class="button back" href="#">Back</a>-->
+    <h1 class="title">Categories</h1>
+    <!--<a class="button" href="#menu">Menu</a>-->
+</header>
+
+<div class="content">
+
+    {{#if .}}
+    <ul class="list">
+        {{#each .}}
+        <li style="clear: both">
+            <a href="#categories/{{category}}">
+                    <!--<img src="https://graph.facebook.com/<%= data[friend].id %>/picture?type=square" style="float:left;"/>-->
+                {{category}}
+                {{cnt}}
+                <span class="chevron"></span>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+    {{/if}}
+
+</div>
